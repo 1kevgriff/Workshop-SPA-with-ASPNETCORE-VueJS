@@ -43,11 +43,11 @@ There will be three primary views:
         - Templates
         - Styles
         - Code
-    - EXERCISE: Basic Custom VueJS Component (20 minutes)
     - Reactive Concepts
         - Methods
         - Computed
         - Watch
+    - EXERCISE: Basic Custom VueJS Component (20 minutes)
     - Lifecycle Events
         - Created
         - Mounted
