@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> If you run into issue, refer to the END folder which contains the solution to this exercise.
+> If you run into an issue, refer to the END folder which contains the solution to this exercise.
 
 ## Step 1
 Open the BEGIN folder in Visual Studio Code, or your preferred text editor.
@@ -96,7 +96,7 @@ Open `App.vue` and add the following code after the `<nav-bar />` tag:
 <router-view></router-view>
 ```
 
-## Step 4 - Updating the Navigation Bar
+## Step 5 - Updating the Navigation Bar
 
 Open `components/navbar.vue`.  We want to add two items that'll link us to the Home page (list of To Do Lists) and the About page.
 
@@ -136,7 +136,7 @@ It's time to test!  At the command prompt, type `npm run dev` and press `Enter`.
 
 Open a browser and navigate to `http://localhost:3000`.  You should be able to navigate between the home page and the about page by just clicking on the navigation bar links.
 
-## Step 5 - Creating a List of To Do Lists
+## Step 6 - Creating a List of To Do Lists
 
 Open `components/ToDoList.vue`.  Add the following code to the `<template>` tag:
 
@@ -151,7 +151,19 @@ The `<router-link>` tag will translate into a `<a>` tag.  The `name` property is
 
 Looking at `Go to List #1`, this route will translate to `/1`, because in our `routes` configuration several steps ago, we said `toDoList` follows the pattern `/:id`.  However, to make this route work correctly we need to pass in the ID of the To Do List.  We can do this by adding the `params` property to the `:to` definition.
 
-## Step 6 - Final Test!
+## Step 7 - The To Do List Page
+
+Open `components/ListItems.vue`.  Add the following code to the `<template>` tag:
+
+```html
+<h2>List Items for list #{{ $route.params.id }}</h2>
+```
+
+Since this view is only shown when a dynamic route is matched, we want to pull the `:id` from the route so we know which To Do List to show.
+
+Vue Router automatically provides us with a `$route` property that contains the information about the route that was matched.  We can use this property to access the `params` property of the route.  Since `:id` is the param being passed in, we can access it by using the `$route.params.id` roperty.
+
+## Step 8 - Final Test!
 
 Ensure all your files are saved.  Then, at the command prompt, type `npm run dev` and press `Enter`.
 

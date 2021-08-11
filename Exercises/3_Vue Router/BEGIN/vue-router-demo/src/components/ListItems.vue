@@ -1,5 +1,5 @@
 <template>
-  <h2>List Items for list #{{ $route.params.id }}</h2>
+  <!-- TODO: which todo are we on? -->
 </template>
 
 <script>

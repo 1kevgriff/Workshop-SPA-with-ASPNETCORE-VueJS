@@ -3,7 +3,7 @@
     <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
     <div class="max-w-3xl mx-auto">
       <nav-bar />
-      <router-view></router-view>
+      <!-- TODO: add router view -->
     </div>
   </div>
 </template>
