@@ -1,17 +1,17 @@
 import './assets/index.css';
 import { createApp } from 'vue';
 import App from './App.vue';
-import { createStore } from "vuex";
 import ToDoList from './components/ToDoList.vue';
 import ListItems from './components/ListItems.vue';
+import { createStore } from 'vuex';
 
-/* Vue Router */
+/* vue router */
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
     { name: "default", path: '/', component: ToDoList },
     { path: '/about', component: () => import('./components/About.vue') },
-    { path: '/:id', component: ListItems }
+    { name: "todoList", path: '/:id', component: ListItems }
 ];
 
 const router = createRouter({
@@ -19,28 +19,26 @@ const router = createRouter({
     routes: routes
 });
 
-/* Vuex */
+/* vuex */
 const store = createStore({
     state: {
         toDoLists: []
     },
     actions: {
-        addToDoList(context, toDoListName) {
-            context.commit('addToDoListMutation', toDoListName);
-        },
-        addToDoListItem(context, toDoListName, toDoListItem) {
-            context.commit('addToDoListItemMutation', toDoListName, toDoListItem);
+        addNewToDoList({ commit }, toDoListName) {
+            console.log("Action: Adding new todo list");
+            commit('addNewToDoList', toDoListName);
         }
     },
     mutations: {
-        addToDoListMutation(state, toDoListName) {
+        addNewToDoList(state, toDoListName) {
+            console.log("Mutation: Adding new todo list");
             state.toDoLists.push({ name: toDoListName, items: [] });
-        },
-        addToDoListItemMutation(state, toDoListName, itemText) {
-            state.toDoLists
-                .find(list => list.name === toDoListName)
-                .items
-                .push({ itemText: itemText, done: false });
+        }
+    },
+    getters: {
+        getToDoListByName: (state) => (name) => {
+            return state.toDoLists.find(todoList => todoList.name === name);
         }
     }
 });
