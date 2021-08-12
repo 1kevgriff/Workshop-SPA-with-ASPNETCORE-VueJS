@@ -9,7 +9,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
     { name: "default", path: '/', component: ToDoList },
     { path: '/about', component: () => import('./components/About.vue') },
-    { path: '/:id', component: ListItems }
+    { name: "todoList", path: '/:id', component: ListItems }
 ];
 
 const router = createRouter({
