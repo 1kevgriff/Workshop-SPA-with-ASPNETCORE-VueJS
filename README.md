@@ -69,9 +69,10 @@ There will be three primary views:
 
 - BREAK (15 minutes)
 
-- Local Proxies (or how dev environments play nice)
-- Axios
-    - Exercise: Wiring it all together
+- Bringing it all together
+    - Local Proxies (or how dev environments play nice)
+    - Axios
+    - EXERCISE: Wiring it all together
 
 - 🐿 Ship It!
 
