@@ -30,11 +30,11 @@ public class ToDoController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetToDoLists()
     {
-        return Ok(await GetToDoLists());
+        return Ok(await GetToDos());
     }
 
     [HttpPost]
-    public async Task<IActionResult> AddToDoList(ToDoList toDoList)
+    public async Task<IActionResult> AddToDoList([FromBody]ToDoList toDoList)
     {
         var todos = await GetToDos();
         todos.Add(toDoList);
