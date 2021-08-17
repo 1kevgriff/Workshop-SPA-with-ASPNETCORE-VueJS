@@ -9,7 +9,6 @@
         v-for="(item, index) in loadedToDoList.items"
         :key="index"
         :class="{ 'line-through': item.done }"
-        @click="toggle(index)"
       >
         {{ item.name }}
       </li>
@@ -21,21 +20,17 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { mapActions, mapState } from "vuex";
 export default {
   data() {
     return {};
   },
   computed: {
-    ...mapGetters(["getToDoListByName"]),
-    loadedToDoList() {
-      return this.getToDoListByName(this.$route.params.id);
-    },
   },
   methods: {
-    ...mapActions(["addNewToDoList"]),
   },
 };
+
 </script>
 
 <style>

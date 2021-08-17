@@ -1,4 +1,4 @@
-# Exercise 3: Putting It All Together
+# Exercise 6: Putting It All Together
 
 ## Introduction
 
@@ -6,5 +6,8 @@
 
 ## Step 1
 Open the BEGIN folder in Visual Studio Code, or your preferred text editor.
+
+## Step 2
+You're going to notice there are TWO applications in the BEGIN 
 
 **YOU HAVE COMPLETED THIS EXERCISE - WAY TO GO**
