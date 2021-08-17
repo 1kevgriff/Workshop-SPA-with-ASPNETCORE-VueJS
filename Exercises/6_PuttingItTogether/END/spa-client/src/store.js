@@ -28,7 +28,7 @@ const store = createStore({
             commit('updateToDoLists', result);
             commit('endLoading');
         },
-        async addToDoListItem({ commit }, toDoListName, taskName) {
+        async addToDoListItem({ commit }, { toDoListName, taskName }) {
             commit('startLoading');
             console.log("Action: Adding todo list item");
 
@@ -39,11 +39,11 @@ const store = createStore({
             commit('updateToDoLists', result);
             commit('endLoading');
         },
-        async toggleToListListItem({ commit }, toDoListName, taskName) {
+        async toggleItem({ commit }, { toDoListName, index }) {
             commit('startLoading');
             console.log("Action: Marking todo list item as done");
 
-            var result = await axios.put(url + "/todos/" + toDoListName + "/items/" + taskName);
+            var result = await axios.put(url + "/todos/" + toDoListName + "/items/" + index);
 
             commit('updateToDoLists', result);
             commit('endLoading');

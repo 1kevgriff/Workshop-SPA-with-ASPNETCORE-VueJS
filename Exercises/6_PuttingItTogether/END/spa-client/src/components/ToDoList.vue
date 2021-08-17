@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>To Do List</h2>
+    <h2 class="text-2xl font-bold">To Do List</h2>
     <br />
     <div v-if="loading">
       <p>Loading...</p>
@@ -8,7 +8,8 @@
     <div v-else-if="todoLists && todoLists.length > 0">
       <div v-for="td in todoLists" :key="td.name">
         <router-link :to="{ name: 'todoList', params: { id: td.name } }"
-          >{{ td.name }} - {{ td.items.length }} items to do</router-link
+        class="text-lg hover:underline">
+          {{ td.name }} - {{ td.items.length }} items to do</router-link
         >
         <br />
       </div>
@@ -20,7 +21,14 @@
     <div class="mt-10">
       <input class="border-2 border-black" v-model="newToDoListName" />
       <button
-        class="p-2 mx-2 bg-blue-300 border-2 border-gray-300 shadow hover:bg-blue-100"
+        class="
+          p-2
+          mx-2
+          bg-blue-300
+          border-2 border-gray-300
+          shadow
+          hover:bg-blue-100
+        "
         @click="addNewToDo"
       >
         Add new todo list

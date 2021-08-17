@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -58,14 +59,16 @@ public class ToDoController : ControllerBase
         return CreatedAtAction("GetToDoLists", new { }, todos);
     }
 
-    [HttpPut("{toDoListName}/items/{toDoItemName}")]
-    public async Task<IActionResult> ToggleToDoItem(string toDoListName, string toDoItemName)
+    [HttpPut("{toDoListName}/items/{index}")]
+    public async Task<IActionResult> ToggleToDoItem(string toDoListName, int index)
     {
         var todos = await GetToDos();
         var toDoList = todos.Find(x => x.Name == toDoListName);
         if (toDoList == null) return NotFound();
 
-        var toDoItem = toDoList.Items.Find(x => x.Name == toDoItemName);
+        if (index > toDoList.Items.Count() - 1) return NotFound();
+
+        var toDoItem = toDoList.Items[index];
         if (toDoItem == null) return NotFound();
 
         toDoItem.Done = !toDoItem.Done;
