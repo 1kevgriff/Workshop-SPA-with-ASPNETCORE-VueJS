@@ -155,7 +155,7 @@ Because `getToDoListByName` needs a parameters, we can't use it directly in our 
 It's time to test!  Save all your changes, open a terminal and run:
 
 ```
-npm start dev
+npm run dev
 ```
 
 Open a browser to the URL the dev server provides you, and see if you want add to do lists!
