@@ -69,7 +69,7 @@ Finally, still in `main.js` add the following code near where the Vue App is cre
 app.use(store);
 ```
 
-## Step 6
+## Step 7
 Jump over to `components/ToDoList.vue`.  Our goal in this file is to wire up some actions and the state.
 
 > The HTML has already been wired up for you, as it's a review of the work we did in previous labs.
@@ -123,7 +123,7 @@ export default {
 </script>
 ```
 
-## Step 7
+## Step 8
 Swap over now to `components/ListItems.vue`.  This is the place where we want to see a loaded to do list.
 
 > Note: in this lab, we're not worrying about list items in the To Do List.  We're only going to worry about showing the name of the to do list.
@@ -151,7 +151,7 @@ export default {
 
 Because `getToDoListByName` needs a parameters, we can't use it directly in our view.  Instead, we need to create a second computed property `loadedToDoList` which executes `getToDoListByName` and passes in the Id of the current list (which is from the route).
 
-## Step 8
+## Step 9
 It's time to test!  Save all your changes, open a terminal and run:
 
 ```
