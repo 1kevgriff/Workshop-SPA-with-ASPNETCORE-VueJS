@@ -1,7 +1,8 @@
 import { createStore } from 'vuex';
 import axios from 'axios';
 
-const url = "/api";
+const url = import.meta.env.VITE_API_URL;
+console.log(url);
 
 const store = createStore({
     state: {

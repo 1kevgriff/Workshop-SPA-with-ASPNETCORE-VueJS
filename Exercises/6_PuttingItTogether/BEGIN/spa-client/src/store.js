@@ -1,7 +1,8 @@
 import { createStore } from 'vuex';
-import axios from 'axios';
+/* import axios */
 
-const url = "/api";
+const url = import.meta.env.VITE_API_URL;
+console.log(url);
 
 const store = createStore({
     state: {
@@ -12,7 +13,7 @@ const store = createStore({
             commit('startLoading');
             console.log("Action: Getting ToDos");
 
-            var result = await axios.get(url + "/todos");
+            /* Axios */
 
             commit('updateToDoLists', result);
             commit('endLoading');
@@ -21,9 +22,7 @@ const store = createStore({
             commit('startLoading');
             console.log("Action: Adding new todo list");
 
-            var result = await axios.post(url + "/todos", {
-                name: toDoListName
-            });
+            /* Axios */
 
             commit('updateToDoLists', result);
             commit('endLoading');
@@ -32,9 +31,7 @@ const store = createStore({
             commit('startLoading');
             console.log("Action: Adding todo list item");
 
-            var result = await axios.post(url + "/todos/" + toDoListName + "/items", {
-                name: taskName
-            });
+            /* Axios */
 
             commit('updateToDoLists', result);
             commit('endLoading');
@@ -43,7 +40,7 @@ const store = createStore({
             commit('startLoading');
             console.log("Action: Marking todo list item as done");
 
-            var result = await axios.put(url + "/todos/" + toDoListName + "/items/" + index);
+            /* Axios */
 
             commit('updateToDoLists', result);
             commit('endLoading');
