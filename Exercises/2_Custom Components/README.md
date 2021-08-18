@@ -2,13 +2,13 @@
 
 ## Introduction
 
-> If you run into issue, refer to the END folder which contains the solution to this exercise.
+> If you run into issues, refer to the END folder which contains the solution to this exercise.
 
 ## Step 1
 Open the BEGIN folder in Visual Studio Code, or your preferred text editor.
 
 ## Step 2
-In a terminal,type `cd custom-components` and press `Enter`.
+In a terminal, type `cd custom-components` and press `Enter`.
 
 Type `npm install` and press `Enter`.  This should install the appropriate packages for the exercise.
 
@@ -18,7 +18,7 @@ This is a fantastic time to go ahead and start the development server for the de
 In any browser, go to `http://localhost:3000` and you should see the component page.  It'll be blank.
 
 ## Step 4
-Open the file `src/components/GenericComponent.vue`.  You'll notice it is an empty component.  Let's start building it out!
+Open the file `src/components/GenericList.vue`.  You'll notice it is an empty component.  Let's start building it out!
 
 ## Step 5
 Add the following code to the `<template>` tag:
