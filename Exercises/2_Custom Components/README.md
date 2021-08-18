@@ -92,7 +92,7 @@ In the `<script>` tag, update your export to reflect the following code:
 
 The `methods` section of the block is new, and contains a single methods called `addToList`.  This method will add the `newItem` to the `list` array.  The `newItem` will be cleared out of the input.
 
-Back in you `<template>` tag, update the `<button>`:
+Back in your `<template>` tag, update the `<button>`:
 
 ```html
 <button @click="addToList">Add To List</button>
