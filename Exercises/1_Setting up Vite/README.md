@@ -29,7 +29,7 @@ At the same prompt, type:
 
 > cd vueandaspnetcore  
 
-> npm run serve  
+> npm install  
 > >npm WARN @0.0.0 No repository field.  
 > >npm WARN @0.0.0 No license field.  
 > >npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):  
