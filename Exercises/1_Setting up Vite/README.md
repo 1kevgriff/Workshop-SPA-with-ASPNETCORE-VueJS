@@ -54,6 +54,6 @@ In the same directory, type:
 > >  
 > > ready in 1174ms.  
 
-This will start a web server on port 3000.  Open a browser and navigate to http://localhost:300.  You should see the Vue application.
+This will start a web server on port 3000.  Open a browser and navigate to http://localhost:3000.  You should see the Vue application.
 
 ![](ViteSuccess.png)
