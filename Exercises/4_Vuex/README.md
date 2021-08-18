@@ -52,7 +52,7 @@ const store = createStore({
 
 Let's walkthrough what this code is doing for us.
 
-`state` is the data you want to track changes for within the application.  It's important to note that only properties
+`state` is the data you want to track changes for within the application.  It's important to note that it's only properties.
 
 `actions` are methods for doing work.  This might be API calls or doing logic.  Actions are the only mechanism in Vuex that can trigger mutations, which eventually changes the state of the application.
 
