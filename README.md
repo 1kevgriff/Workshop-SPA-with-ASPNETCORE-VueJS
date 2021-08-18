@@ -23,11 +23,10 @@ There are some *things* you should have ready to go before this workshop.  [Chec
 ## The "Goal" Project
 In this workshop, we are going to build a simple application to management multiple To Do lists and items.
 
-There will be three primary views:
+There will be two primary views:
 
 * The List of Lists
 * To Dos for a given list
-* Create or Edit a To Do
 
 > Note: The goal of this workshop isn't to build something "pretty".  In fact, the views will be pretty rough!  But they'll work!
 
@@ -64,8 +63,7 @@ There will be three primary views:
     - Startup.cs Explained
         - Dependency Injection
         - Middleware and Routing Pipeline
-    - EXERCISE: Setting up ASP.NET Core
-    - EXERCISE: Creating the Todo Controller and Actions
+    - EXERCISE: ASP.NET Core + Basic ToDo Controller
 
 - BREAK (15 minutes)
 
