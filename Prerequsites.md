@@ -1,5 +1,9 @@
 # Prerequisites
 
+Welcome to the workshop!  We're going to do our best to keep this as painless as possible for you, but there are a couple things we need to ensure you have preinstalled on your machine before we begin.
+
+If you have any questions about the installables, please file an issue or shoot me an email (kevin at consultwithgriff.com)
+
 ## Installables
 
 1. [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
