@@ -10,7 +10,11 @@ If you have any questions about the installables, please file an issue or shoot 
 
 2. [Install Node.js](https://nodejs.org/en/download/)
 
+> Latest or LTS versions work.  I tend to stick to LTS versions for most of my development needs.
+
 3. [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/getting-started)
+
+> In reality, you just need AN EDITOR.  VS Code is a great experience and a lot of people use it.  But if you're still running Sublime or Notepad++, that's cool!  Use what you like.
 
 4. [Install .NET 5 SDK](https://www.microsoft.com/net/download/core#/net-core-sdk-current)
 
