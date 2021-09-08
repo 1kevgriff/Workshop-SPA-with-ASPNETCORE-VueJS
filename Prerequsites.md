@@ -12,4 +12,6 @@ If you have any questions about the installables, please file an issue or shoot 
 
 3. [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/getting-started)
 
-4. [Install .NET Core SDK](https://www.microsoft.com/net/download/core#/net-core-sdk-current)
+4. [Install .NET 5 SDK](https://www.microsoft.com/net/download/core#/net-core-sdk-current)
+
+> You might be asking yourself, does this workshop still support .NET Core 3.1 since it's the current LTS version?  Sure does!  If you're running 3.1 still, that's fine.  Either works for the needs of this workshop.
