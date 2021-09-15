@@ -2,16 +2,13 @@
 
 ## Introduction
 
-## Step 1: Install Vite
-You should have already done this as part of the setup process.  Please check [Prerequisites](../../Prerequisites.md) for more information.
+## Step 1: Run the initialization command
 
-## Step 2: Run the initialization command
-
-Open a command prompt, and navigate to a working directory where you'll be working through these exercises.
+Open a command prompt, and navigate to a the `BEGIN` folder where you'll be working through this exercises.
 
 > npm init vite@latest
 
-## Step 3: Project Settings
+## Step 2 Project Settings
 
 The wizards will guide you through setting up a new Vue project.
 
@@ -21,7 +18,7 @@ The wizards will guide you through setting up a new Vue project.
 
 > ? Select a variant: » vue-ts
 
-## Step 4: Dreaded NPM Install
+## Step 3: Dreaded NPM Install
 
 Bootstrapping the application only sets up the packages.json file needed, but it doesn't actually install the packages. 
 
